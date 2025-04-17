@@ -1,0 +1,10 @@
+# This is a requirements file for a Python project.
+matplotlib
+numpy
+pandas
+scikit-learn
+seaborn
+statsmodels
+tensorflow
+torch
+datasets
