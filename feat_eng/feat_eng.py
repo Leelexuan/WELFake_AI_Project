@@ -67,14 +67,14 @@ Built on current feature list
 
 def has_1_to_3_urls(text: str) -> bool:
     count = len(re.findall(URL_REGEX, text))
-    return 1 <= count <= 3
+    return int(1 <= count <= 3)
 
 def has_4_to_6_urls(text: str) -> bool:
     count = len(re.findall(URL_REGEX, text))
-    return 4 <= count <= 6
+    return int(4 <= count <= 6)
 
 def has_more_than_6_urls(text: str) -> bool:
-    return len(re.findall(URL_REGEX, text)) > 6
+    return int(len(re.findall(URL_REGEX, text)) > 6)
 
 
 """
@@ -87,9 +87,6 @@ def num_exclamations(text):
 
 def num_questions(text):
     return text.count('?')
-
-
-print(num_exclamations(text))
 
 def avg_word_length(text):
     words = re.findall(r'\b\w+\b', text)
@@ -112,3 +109,6 @@ def proportion_stopwords(text):
         return 0
     stopwords = [word for word in words if word in ENGLISH_STOP_WORDS]
     return len(stopwords) / len(words)
+
+
+print(lexical_diversity(text))
