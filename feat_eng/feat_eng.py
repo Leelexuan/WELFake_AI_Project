@@ -15,13 +15,13 @@ import string
 
 text = "This is a u98u sentence. Here is another! And on'e more?!!!!"
 
+URL_REGEX = r"[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
     
 def has_quotes(text):
     return int(bool(re.search(r'".+"', text)))
 
 def has_url(text):
-    regex = r"[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)"
-    return int(bool(re.search(regex, text)))
+    return int(bool(re.search(URL_REGEX, text)))
 
 def percent_uppercase(text):
     return sum(1 for c in text if c.isupper())/ len(text) * 100 if len(text) > 0 else 0
@@ -54,6 +54,38 @@ def avg_sentence_length(text):
     
     return total_length/count if count > 0 else 0
 
+"""
+//////////////////////////////////////////////////
+                    Iter 2
+
+"""
+
+"""
+Built on current feature list
+"""
+
+def has_1_to_3_urls(text: str) -> bool:
+    count = len(re.findall(URL_REGEX, text))
+    return 1 <= count <= 3
+
+def has_4_to_6_urls(text: str) -> bool:
+    count = len(re.findall(URL_REGEX, text))
+    return 4 <= count <= 6
+
+def has_more_than_6_urls(text: str) -> bool:
+    return len(re.findall(URL_REGEX, text)) > 6
 
 
-print(has_quotes(text))
+"""
+Stylistic features 
+"""
+
+#indicates emotion
+def num_exclamations(text):
+    return text.count('!')
+
+def num_questions(text):
+    return text.count('?')
+
+
+print(num_exclamations(text))
