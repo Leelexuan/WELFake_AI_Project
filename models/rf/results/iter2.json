@@ -2,30 +2,30 @@
     "all_features":{
 
         "welfake" :{
-        "Accuracy": 0.8869270428702593,
-        "Precision": 0.9100443131462334,
-        "Recall": 0.8613169299594575
+        "Accuracy": 0.878028109329755,
+        "Precision": 0.9061377245508982,
+        "Recall": 0.8462183699147211
         },
     
     "test data": {
-        "Accuracy": 0.4339130434782609,
-        "Precision": 0.2696135831381733,
-        "Recall": 0.39493996569468265
+        "Accuracy": 0.4365217391304348,
+        "Precision": 0.27251461988304093,
+        "Recall": 0.3996569468267582
         }
     },
 
     "rfe_features":{
 
         "welfake" :{
-        "Accuracy": 0.8760505685429762,
-        "Precision": 0.8963289280469897,
-        "Recall": 0.8533482454914022
+        "Accuracy": 0.8641853238223038,
+        "Precision": 0.892760588765395,
+        "Recall": 0.8309800083880889
         },
     
     "test data": {
-        "Accuracy": 0.42536231884057973,
-        "Precision": 0.27997844246833736,
-        "Recall": 0.44554030874785594
+        "Accuracy": 0.4350724637681159,
+        "Precision": 0.28500823723228996,
+        "Recall": 0.4451114922813036
         }
     },
 
@@ -46,8 +46,8 @@
   "frequency_words_length_12":     4,
             "has_1_to_3_urls":     5,
             "has_4_to_6_urls":     6,
-  "frequency_words_length_14":     7,
-                 "has_quotes":     8,
+                 "has_quotes":     7,
+  "frequency_words_length_14":     8,
   "frequency_words_length_15":     9
         
     }
