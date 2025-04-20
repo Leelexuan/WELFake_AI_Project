@@ -89,3 +89,25 @@ def num_questions(text):
 
 
 print(num_exclamations(text))
+
+def avg_word_length(text):
+    words = re.findall(r'\b\w+\b', text)
+    lengths = [len(w) for w in words]
+    return sum(lengths) / len(lengths) if lengths else 0
+
+def lexical_diversity(text):
+    if not isinstance(text, str):
+        return 0
+    words = re.findall(r'\b\w+\b', text.lower())
+    total_words = len(words)
+    unique_words = len(set(words))
+    return unique_words / total_words if total_words > 0 else 0
+
+def proportion_stopwords(text):
+    if not isinstance(text, str):
+        return 0
+    words = re.findall(r'\b\w+\b', text.lower())
+    if len(words) == 0:
+        return 0
+    stopwords = [word for word in words if word in ENGLISH_STOP_WORDS]
+    return len(stopwords) / len(words)
