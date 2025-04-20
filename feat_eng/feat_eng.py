@@ -12,6 +12,7 @@ age number of quotes compared to fake news.
 
 import re
 import string
+from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
 
 text = "This is a u98u sentence. Here is another! And on'e more?!!!!"
 
