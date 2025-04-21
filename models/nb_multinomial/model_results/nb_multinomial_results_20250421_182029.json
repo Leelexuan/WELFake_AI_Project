@@ -1,0 +1,66 @@
+{
+    "model_name": "MultinomialNB_iter2",
+    "timestamp": "2025-04-21 18:20:29",
+    "dataset": "WELFake_stylo_feats",
+    "metrics": {
+        "accuracy": 0.652128764278297,
+        "best_accuracy": 0.652128764278297,
+        "best_alpha": 0.001,
+        "confusion_matrix": [
+            [
+                5786,
+                1198
+            ],
+            [
+                3157,
+                2378
+            ]
+        ],
+        "classification_report": {
+            "0": {
+                "precision": 0.557916600095862,
+                "recall": 1.0,
+                "f1-score": 0.7162342323864219,
+                "support": 6984.0
+            },
+            "1": {
+                "precision": 1.0,
+                "recall": 0.0001806684733514002,
+                "f1-score": 0.000361271676300578,
+                "support": 5535.0
+            },
+            "macro avg": {
+                "precision": 0.778958300047931,
+                "recall": 0.5000903342366757,
+                "f1-score": 0.35829775203136127,
+                "support": 12519.0
+            },
+            "weighted avg": {
+                "precision": 0.7533740342734644,
+                "recall": 0.5579519130921,
+                "f1-score": 0.39972677671659834,
+                "support": 12519.0
+            }
+        }
+    },
+    "feature_importance": {
+        "has_quotes": 0.30655362435677436,
+        "has_url": 0.222442502182032,
+        "percent_uppercase": -0.07040174320685644,
+        "frequency_punctuation": -0.29661857461812247,
+        "percent_whitespace": -0.21376932071596144,
+        "frequency_words_length_15": 0.29386237085100575,
+        "frequency_words_length_14": -0.39282755808987346,
+        "frequency_words_length_12": -0.3386696810913925,
+        "frequency_words_length_11": -0.3640120607049191,
+        "avg_sentence_length": -0.19023431027602733,
+        "has_1_to_3_urls": -0.11714238741270933,
+        "has_4_to_6_urls": 0.5536451015096029,
+        "has_more_than_6_urls": 0.7595243959494304,
+        "num_exclamations": 1.4014943057750466,
+        "num_questions": 0.804504897805078,
+        "avg_word_length": -0.2743018922019669,
+        "lexical_diversity": -0.18602757753949462,
+        "proportion_stopwords": -0.18381019160225875
+    }
+}
