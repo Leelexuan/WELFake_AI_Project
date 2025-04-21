@@ -1,0 +1,57 @@
+{
+    "all_features":{
+
+        "welfake" :{
+        "Accuracy": 0.878028109329755,
+        "Precision": 0.9061377245508982,
+        "Recall": 0.8462183699147211
+        },
+    
+    "test data": {
+        "Accuracy": 0.4365217391304348,
+        "Precision": 0.27251461988304093,
+        "Recall": 0.3996569468267582
+        }
+    },
+
+    "rfe_features":{
+
+        "welfake" :{
+        "Accuracy": 0.8641853238223038,
+        "Precision": 0.892760588765395,
+        "Recall": 0.8309800083880889
+        },
+    
+    "test data": {
+        "Accuracy": 0.4350724637681159,
+        "Precision": 0.28500823723228996,
+        "Recall": 0.4451114922813036
+        }
+    },
+
+    "rfe_feature_ranking":{
+ 
+       "proportion_stopwords":     1,
+                    "has_url":     1,
+          "percent_uppercase":     1,
+      "frequency_punctuation":     1,
+         "percent_whitespace":     1,
+            "avg_word_length":     1,
+              "num_questions":     1,
+           "num_exclamations":     1,
+          "lexical_diversity":     1,
+        "avg_sentence_length":     1,
+  "frequency_words_length_11":     2,
+       "has_more_than_6_urls":     3,
+  "frequency_words_length_12":     4,
+            "has_1_to_3_urls":     5,
+            "has_4_to_6_urls":     6,
+                 "has_quotes":     7,
+  "frequency_words_length_14":     8,
+  "frequency_words_length_15":     9
+        
+    }
+
+
+
+}
